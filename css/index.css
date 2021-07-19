@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+/* 外部文字樣式引入 */
+.roboto-font{
+    font-family: 'Roboto', sans-serif;
+}
+.noto-sans-font{
+    font-family: 'Noto Sans', sans-serif;
+}
+.font-w700{
+    font-weight: 700;
+}
+/* 特定文字樣式 */
+.fs20-lh30{
+    font-size: 20px;
+    line-height: 30px;
+}
+.fs16-lh24{
+    font-size: 16px;
+    line-height: 24px;
+}
+.fs36-lh54{
+    font-size: 36px;
+    line-height: 54px;
+}
+/* 版面置中 */
+.wrap{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.header{
+    padding: 30px 88px;
+    background-color: #AA0601;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content h1{
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.header-list{
+    max-width: 490px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-list a{
+    color: #fff;
+}
+.header-list a:hover{
+    color: #ffebcd;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+@media (max-width:768px){
+	.header{
+        padding: 30px;
+    }
+}
+@media (max-width:375px){
+    .header{
+        padding: 0;
+    }
+    .header-content{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .header-content img{
+        margin: 10px 0;
+        
+    }
+    .header-list{
+        flex-wrap: wrap;
+    }
+    .header-list a{
+        width: 50%;
+        text-align: center;
+        border: 1px solid #fff;
+        padding: 8px 0;
+    }
+}
+
+.footer{
+    background-color: #AA0601;
+    padding: 44px 0;
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover{
+    color: #ffebcd;
+    transition: 0.4s;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    max-width: 480px;
+    width: 100%;
+}
+.footer-tel-mail img{
+    width: 36px;
+    margin-right: 22px;
+}
+.footer-tel-mail{
+    margin-bottom: 24px;
+}
+.footer-contact{
+    display: flex;
+    align-items: center;
+}
+.footer-link{
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon{
+    max-width: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon img:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+.footer-copyright{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding-top: 32px;
+}
+.footer-copyright-list a{
+    margin-left: 48px;
+}
+@media (max-width:768px){
+    .footer{
+        padding: 32px 0;
+    }
+    .footer-icon{
+        max-width: 120px;
+    }
+    .footer-icon img{
+        width: 24px;
+    }
+    .footer-tel-mail img{
+        width: 20px;
+        margin-right: 11px;
+    }
+    .footer-tel-mail a{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .footer-list{
+        max-width: 440px;
+    }
+    .footer-copyright{
+        padding-top: 24px;
+    }
+}
+@media (max-width:375px){
+    .wrap{
+        padding: 0 15px;
+    }
+    .footer-tel-mail img{
+        width: 15px;
+        margin-right: 8px;
+    }
+    .footer-list{
+        max-width: 180px;
+    }
+    .footer-tel-mail a{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .footer-link{
+        display: none;
+    }
+    .footer-copyright{
+        flex-wrap: wrap;
+    }
+    .footer-copyright-list a{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    .footer-copyright-list{
+        display: flex;
+        flex-direction: column;
+    }
+}
